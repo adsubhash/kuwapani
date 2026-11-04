@@ -1,0 +1,13 @@
+KUWAPANI — MANUAL SETUP FIELDS
+
+In the Excel workbook:
+- YELLOW cells = enter your real business/product/order information.
+- BLUE cells = formulas; do not overwrite unless you intend to change the calculation.
+
+In .env.local and Vercel Environment Variables:
+- Every [ADD_...] / [ADD ...] placeholder must be replaced with a value copied from the correct provider dashboard.
+- Never share or commit Stripe secret keys or Supabase service-role keys.
+
+In Supabase products table:
+- Enter real product names, SKU, description, price_cents, stock_quantity, image_url and is_active.
+- price_cents is cents: $10.00 = 1000.
